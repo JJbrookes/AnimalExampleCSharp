@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4d78667a-1d95-476c-a10b-09c172ead60a": {
+      "ProjectGuid": "4d78667a-1d95-476c-a10b-09c172ead60a",
+      "DisplayName": "AnimalExampleCSharp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace AnimalExampleCSharp
 {
-    public abstract class Bird:Animal
+    public abstract class Fish : Animal
     {
-        public Bird():this(1, "Bird")
+        public Fish()
         {
 
         }
-        public Bird(int age, string name) : base(age, name)
+        public Fish(int age, string name) : base(age, name)
         {
 
         }
@@ -22,9 +22,14 @@ namespace AnimalExampleCSharp
             //Implement Breathe 
         }
 
-        public override Bird reproduce(Animal[] otherParent)
+        public override Fish reproduce(Animal[] otherParent)
         {
             return null;
+        }
+
+        public void Swim()
+        {
+            Console.WriteLine("I sure do love me some swimming");
         }
     }
 }

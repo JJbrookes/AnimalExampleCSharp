@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace AnimalExampleCSharp
 {
-    public class Penguin : Bird
+    public class Anglefish : Fish
     {
-        public Penguin(int Age, string Name) : base(Age, Name)
+        public Anglefish()
         {
 
         }
-        public Penguin(int Age): this(Age, "Penquin")
-        {
-
-
-        }
-        public Penguin()
+        public Anglefish(int Age, string Name) : base(Age, Name)
         {
 
         }

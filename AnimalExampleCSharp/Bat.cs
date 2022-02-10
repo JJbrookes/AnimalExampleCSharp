@@ -8,6 +8,15 @@ namespace AnimalExampleCSharp
 {
     public  class Bat: Mammal, Flying
     {
+
+        public Bat()
+        {
+
+        }
+        public Bat(int age, string name) : base(age, name)
+        {
+
+        }
         public override void eat(string food)
         {
 
@@ -25,7 +34,7 @@ namespace AnimalExampleCSharp
 
         public void flight()
         {
-
+            Console.WriteLine("WoW look at me im doin the flying!");
         }
 
     }

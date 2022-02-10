@@ -6,23 +6,19 @@ using System.Threading.Tasks;
 
 namespace AnimalExampleCSharp
 {
-    public class Penguin : Bird
+    public class Dog : Mammal
     {
-        public Penguin(int Age, string Name) : base(Age, Name)
+        public Dog()
         {
 
         }
-        public Penguin(int Age): this(Age, "Penquin")
-        {
-
-
-        }
-        public Penguin()
+        public Dog(int age, string name) : base(age, name)
         {
 
         }
         public override void eat(string food)
         {
+
         }
     }
 }

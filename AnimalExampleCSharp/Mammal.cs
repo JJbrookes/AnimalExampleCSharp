@@ -9,10 +9,16 @@ namespace AnimalExampleCSharp
     public abstract class Mammal: Animal
     {
         //////////////Attributes/////////////////
+        
 
         //////////////Constuctors///////////
-        
+        public Mammal(int age=0, string name="") : base(age, name)
+        {
+
+        }
         //////////////Methods////////////////
+
+
         override public void breathe() 
         {
             //Implement Breathe 

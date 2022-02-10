@@ -10,18 +10,24 @@ namespace AnimalExampleCSharp
     {
 
         //////////////////////////////////////Attributes//////////////////////////////
-        private int age;
-        private string name;
-
-        public int Age { get => age; set => age = value; }
-        public string Name { get => name; set => name = value; }
-
-
+        public int Age { get;  set; }
+        public string Name { get;  set; }
+        public double Weight { get; set; }
+        public string Sex { get; set; }
+        public string Colour { get; set; }
         /////////////////////////////////////Constructors////////////////////////////
         public Animal()
         {
-            age = 1;
-            name = "Bob";
+            Name = "Animal";
+            Age = 1;
+            Weight = 10;
+            Sex = string.Empty;
+            Colour = string.Empty;
+        }
+        public Animal(int age, string name):this()
+        {
+            this.Age = age;
+            this.Name = name;
         }
         ///////////////////////////////////Methods//////////////////////////////////
         public abstract void eat(string food);
@@ -40,9 +46,16 @@ namespace AnimalExampleCSharp
             return "I have logged this";
         }
 
-        public void die()
+        public void die(int averageLifespan)
         {
-            // add die 
+            if(Age > averageLifespan)
+            {
+
+            }
+            else if (Age > averageLifespan)
+            {
+
+            }
         } 
         
     }
